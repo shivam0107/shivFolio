@@ -87,13 +87,13 @@ const ProjectDetails = () => {
               <div className="fixed flex top-20 left-0 right-0 justify-between w-11/12 mx-auto  p-8  italic rounded-md mt-2 bg-bluegray-200">
                 <div className="text-black flex flex-col  space-y-3">
                   {projectData[0].map((data, index) => (
-                    <div
+                    <button
                       key={index}
                       onClick={() => scrollToSection(index)}
                       className="font-bold p-3  text-2xl cursor-pointer rounded-lg"
                     >
                       {data.title}
-                    </div>
+                    </button>
                   ))}
                 </div>
 
@@ -117,13 +117,13 @@ const ProjectDetails = () => {
           {projectData ? (
             <div className="text-black flex flex-col  p-8  italic rounded-md mt-2 bg-bluegray-200 space-y-3">
               {projectData[0].map((data, index) => (
-                <div
+                <button
                   key={index}
                   onClick={() => scrollToSection(index)}
                   className="font-bold p-3  text-2xl cursor-pointer rounded-lg"
                 >
                   {data.title}
-                </div>
+                </button>
               ))}
             </div>
           ) : (
