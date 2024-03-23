@@ -29,14 +29,18 @@ const ProjectDetails = () => {
   console.log("project data", projectData);
 
   const overviewRef = useRef(null);
-  const otherSectionsRefs = useRef(null);
+  const otherSectionsRefs = useRef([]);
+
+  projectData[0].map((data , index) => {
+      otherSectionsRefs[index] = data;
+  })
 
   
 
 
   // Function to scroll to a section based on ID
   const scrollToSection = (index) => {
-    const ref = index === 0 ? overviewRef : otherSectionsRefs;
+    const ref = index === 0 ? overviewRef : otherSectionsRefs[index];
     ref.current?.scrollIntoView({ behavior: "smooth" });
 
     setIsMobileMenuOpen(false);
@@ -113,9 +117,9 @@ const ProjectDetails = () => {
       </div>
 
       {/* desktop view  */}
-      <div className="hidden md:flex w-full h-fit md:w-2/4">
+      <div className="hidden md:flex  w-full h-fit md:w-2/4">
           {projectData ? (
-            <div className="text-black flex flex-col  p-8  italic rounded-md mt-2 bg-bluegray-200 space-y-3">
+            <div className="text-black flex flex-col flex-start  p-8  italic rounded-md mt-2 bg-bluegray-200 space-y-3">
               {projectData[0].map((data, index) => (
                 <button
                   key={index}
@@ -136,11 +140,11 @@ const ProjectDetails = () => {
           <Overview data={projectData[0][0]} />
         </div>
   
-        <div ref={otherSectionsRefs}> 
+        <div> 
         {projectData[0].map((data, index) => (
-          <div key={index}>
+          <div  key={index}>
             {index !== 0 && (
-              <div onClick={() => scrollToSection(index)}>
+              <div  ref={otherSectionsRefs[index]}   onClick={() => scrollToSection(index)}>
                 <OtherSection data={data}     />
               </div>
             )}

@@ -57,7 +57,8 @@ export const projectDetailsData = [
         ],
         skills: ["React.js", "Node.js", "HTML", "CSS", "Redux"],
           img: [`${courseSec}`,`${buyCourse}`,`${projectImg}`,`${buyCourse}`],
-      }
+      },
+     
     ]
     , 
     devDetective: [
