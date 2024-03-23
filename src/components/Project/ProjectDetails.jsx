@@ -92,7 +92,7 @@ const ProjectDetails = () => {
                       onClick={() => scrollToSection(index)}
                       className="font-bold p-3  text-2xl cursor-pointer rounded-lg"
                     >
-                      {data.title}
+                     {"-> "} {data.title}
                     </button>
                   ))}
                 </div>
@@ -122,7 +122,7 @@ const ProjectDetails = () => {
                   onClick={() => scrollToSection(index)}
                   className="font-bold p-3  text-2xl cursor-pointer rounded-lg"
                 >
-                  {data.title}
+                  {"-> "} {data.title}
                 </button>
               ))}
             </div>
