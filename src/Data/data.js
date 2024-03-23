@@ -1,4 +1,5 @@
 import projectImg from "../assets/apniPathShala.png";
+import devImage from '../assets/DevDetective/home.png'
 
 export const list = {
   apniPathShala: [
@@ -73,7 +74,7 @@ export const projects = [
       "Page that provides GitHub profile details for the user-name provided.",
       "Use gitHub for hosting the project",
     ],
-    projectImg: `${projectImg}`,
+    projectImg: `${devImage}`,
   },
 ];
 
