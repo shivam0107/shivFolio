@@ -38,6 +38,8 @@ const ProjectDetails = () => {
   const scrollToSection = (index) => {
     const ref = index === 0 ? overviewRef : otherSectionsRefs;
     ref.current?.scrollIntoView({ behavior: "smooth" });
+
+    setIsMobileMenuOpen(false);
   };
 
 
@@ -59,7 +61,7 @@ const ProjectDetails = () => {
         setIsMobileMenuOpen(false);
       }
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     // Clean up the event listener when component unmounts
     return () => {
