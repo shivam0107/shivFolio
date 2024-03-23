@@ -47,21 +47,26 @@ const ProjectDetails = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-
   useEffect(() => {
-    const handleClick = (event) => {
-      const { clientX } = event;
+    const handleScroll = () => {
       const screenWidth = window.innerWidth;
-      const positionThreshold = 0.2 * screenWidth;
-
-      if (clientX >= positionThreshold) {
-        // Handle click action here
-        console.log("Clicked 80% from the right of the screen");
+      const scrollPosition = window.scrollX + screenWidth;
+      const positionThreshold = 0.8 * screenWidth;
+  
+      if (scrollPosition >= positionThreshold) {
+        // Handle scroll action here
+        console.log("Scrolled to 80% from the right of the screen");
         setIsMobileMenuOpen(false);
       }
     };
-    document.body.addEventListener("scroll", handleClick);
+    
+    window.addEventListener("scroll", handleScroll);
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [isMobileMenuOpen]);
+
 
   return (
     <>
