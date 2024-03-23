@@ -7,12 +7,12 @@ const Overview = ({data}) => {
 
     const navigate = useNavigate();
   return (
-    <div className="max-full  mx-auto bg-white rounded-lg shadow-lg p-10 mb-4">
+    <div className="w-[100%]  mx-auto bg-white rounded-lg shadow-lg p-10 mb-4">
     <h2 className="text-2xl text-black font-bold mb-4">{data.title}</h2>
     <p className="text-gray-700 mb-4">{data.desc}</p>
     <div className="mb-4">
       <h3 className="font-bold text-black">Skills:</h3>
-      <ul className="list-disc list-inside flex none">
+      <ul className="list-disc list-inside flex flex-wrap md:flex-row ">
         {data.skills.map((skill, index) => (
           <li key={index} className="text-gray-700 p-1">{skill}</li>
         ))}

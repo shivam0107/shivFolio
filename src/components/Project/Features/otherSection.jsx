@@ -3,7 +3,7 @@ import React from 'react'
 const OtherSection = ({data}) => {
     console.log("data in othe Section" , data);
   return (
-    <div className="max-fullmx-auto bg-white rounded-lg shadow-lg p-10 mb-4">
+    <div className="max-full mx-auto bg-white rounded-lg shadow-lg p-10 mb-4">
     <h2 className="text-2xl font-bold mb-4 text-black">{data.title}</h2>
     <p className="text-gray-700 mb-4">Future Scope:</p>
 
@@ -16,7 +16,7 @@ const OtherSection = ({data}) => {
     </div>
     <div className="mb-4">
       <h3 className="font-bold">Skills:</h3>
-      <ul className="list-disc list-inside flex">
+      <ul className="list-disc list-inside flex flex-wrap md:flex-row ">
         {data.skills.map((skill, index) => (
           <li key={index} className="text-gray-700 p-1">{skill}</li>
         ))}
