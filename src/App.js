@@ -10,9 +10,6 @@ import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <div className="w-screen min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
-    
-  
-
 
     <Header />
     

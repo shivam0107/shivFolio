@@ -8,11 +8,6 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import shivam from "../assets/shiv-circle.png";
-
-import { useRef, useEffect } from "react";
-import ProjectCard from "../components/projectCard";
-import list from "../Data/data";
-import projectImg from "../assets/apniPathShala.png";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "../components/Footer/Footer";
 import { technologies } from "../Data/data";

@@ -5,6 +5,7 @@ import CountryCode from "../Data/countrycode.json";
 import Footer from "../components/Footer/Footer";
 import img from '../assets/images.jpg'
 import toast from "react-hot-toast";
+import { getInTouch } from "../services/operations/contactAPI";
 const ContactUs = () => {
   const {
     register,
@@ -16,6 +17,12 @@ const ContactUs = () => {
   const submitContactForm = async (data) => {
     console.log("logging  Data", data);
 
+    try {
+        const res = await getInTouch(data);
+    } catch (error) {
+        console.log("error in contacting" , error);
+        
+    }
 
     toast.success("Form submitted successfully");
 
@@ -32,7 +39,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="w-9/12 flex flex-col space-y-5 md:gap-20 md:flex-row md:justify-center md:items-center mx-auto  text-white mt-5 mb-10">
+      <div className="w-11/12 flex flex-col space-y-5 md:gap-20 md:flex-row md:justify-center md:items-center mx-auto  text-white mt-5 mb-10">
 
       <div className="">
         <h1 className="text-3xl font-bold ">Get in Touch with me</h1>
@@ -170,7 +177,7 @@ const ContactUs = () => {
               {/* button  */}
               <button
                 type="submit"
-                className={`rounded-md bg-yellow-50 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)]`}
+                className={`rounded-md bg-yellow-50 px-6 py-3 text-center cursor-pointer text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)]`}
               >
                 Send Message
               </button>
