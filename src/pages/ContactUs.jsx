@@ -23,10 +23,6 @@ const ContactUs = () => {
         console.log("error in contacting" , error);
         
     }
-
-    toast.success("Form submitted successfully");
-
-    
   };
 
   useEffect(() => {
