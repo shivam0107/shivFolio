@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import img from '../assets/images.jpg'
 import toast from "react-hot-toast";
 import { getInTouch } from "../services/operations/contactAPI";
+import SocialLinks from "../components/common/contact/SocialLinks";
 const ContactUs = () => {
   const {
     register,
@@ -24,7 +25,6 @@ const ContactUs = () => {
         
     }
   };
-
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
@@ -40,7 +40,8 @@ const ContactUs = () => {
       <div className="">
         <h1 className="text-3xl font-bold ">Get in Touch with me</h1>
         <h2>write Your query will get back to you soon</h2>
-        <img src={img} width={400} className=" hidden w-[300px]  md:block  rounded-lg mt-3"/>
+        <img src={img} width={400} className=" hidden w-[300px]  md:block mb-5 rounded-lg mt-3"/>
+        <SocialLinks/>
       </div>
         <div className="">
           <form onSubmit={handleSubmit(submitContactForm)} className="">

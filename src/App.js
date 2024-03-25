@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Project from "./pages/Project"
 import ProjectDetails from "./components/Project/ProjectDetails";
 import ContactUs from "./pages/ContactUs";
+import Skills from "./pages/Skills";
 function App() {
   return (
     <div className="w-screen min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/project-details/:projectName" element={<ProjectDetails />} />
         <Route path="/contact" element={<ContactUs/>} />
+        <Route path="/skills" element={<Skills/>} />
         
     </Routes>
      

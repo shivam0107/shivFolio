@@ -1,6 +1,6 @@
 import React from "react";
-import data from ".././../Data/data";
-import Button from "./Button";
+import data from "../../../Data/data";
+import Button from "../Button";
 
 function Lists({ list }) {
   // console.log(list);

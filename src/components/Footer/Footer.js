@@ -7,6 +7,7 @@ import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { BiLogoPinterestAlt } from "react-icons/bi";
 
 import { Link, NavLink } from "react-router-dom";
+import SocialLinks from "../common/contact/SocialLinks";
 
 function Footer() {
   return (
@@ -67,43 +68,8 @@ function Footer() {
                 Contact
               </NavLink>
             </div>
-
-            <div className="flex space-x-4">
-              <NavLink
-                to="https://www.linkedin.com/in/shivamsingh13/"
-                className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
-                }
-              >
-                <FaLinkedin className="text-3xl" />
-              </NavLink>
-
-              <NavLink
-                to="https://www.linkedin.com/in/shivamsingh13/"
-                className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
-                }
-              >
-                <SiLeetcode className="text-3xl" />
-              </NavLink>
-
-              <NavLink
-                to="https://www.linkedin.com/in/shivamsingh13/"
-                className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
-                }
-              >
-                <FaGithub className="text-3xl" />
-              </NavLink>
-
-              <NavLink
-                to="https://www.linkedin.com/in/shivamsingh13/"
-                className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-indigo-600"
-                }
-              >
-                <FaTwitter className="text-3xl" />
-              </NavLink>
+            <div>
+              <SocialLinks />
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./common/Title";
-import Lists from "./common/Lists";
+import Lists from "./common/skills/Lists";
 import Skills from "./common/Skills";
 import Button from "./common/Button";
 
