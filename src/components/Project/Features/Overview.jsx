@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa6';
 import { MdLiveTv } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
 const Overview = ({data}) => {
-    console.log("data in overview" , data);
+    console.log("data live in overview" , data.Live);
 
     const navigate = useNavigate();
   return (
@@ -36,12 +36,12 @@ const Overview = ({data}) => {
         }
    </div>
    <div className='mt-5 flex gap-7'>
-        <div className='p-2 border-[1px] border-black rounded-lg transition-none duration-200 hover:scale-95 bg-bluegray-300 text-blue-200 font-semibold'>
-            <button >Live Link</button>
-        </div>
-        <div className='p-2 border-[1px] border-black rounded-lg transition-none duration-200 hover:scale-95 bg-bluegray-300 text-blue-200 font-semibold'>
-            <button>GitHub Link</button>
-        </div>
+        <Link to={data.Live} target='_blank' className='p-2 border-[1px] border-black rounded-lg transition-none duration-200 hover:scale-95 bg-bluegray-300 text-blue-200 font-semibold'>
+            <p  >Live Link</p>
+        </Link>
+        <Link to={data.GitHubLink} target='_blank' className='p-2 border-[1px] border-black rounded-lg transition-none duration-200 hover:scale-95 bg-bluegray-300 text-blue-200 font-semibold'>
+            <p >GitHub Link</p>
+        </Link>
    </div>
   </div>
   )

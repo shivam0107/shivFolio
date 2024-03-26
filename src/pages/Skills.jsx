@@ -10,6 +10,7 @@ import { useState } from "react";
 import { accordion } from "../Data/skillAccordion";
 import SkillsAccordion from "../components/common/skills/skillsAccordion";
 import Footer from "../components/Footer/Footer";
+import CourseCertification from "../components/common/skills/CourseCertification";
 
 const SkillSection = () => {
   return (
@@ -24,6 +25,10 @@ const SkillSection = () => {
           {accordion.map((data, index) => {
             return <SkillsAccordion data={data} index={index} />;
           })}
+        </div>
+
+        <div>
+          <CourseCertification/>
         </div>
       </div>
       <Footer className="" />

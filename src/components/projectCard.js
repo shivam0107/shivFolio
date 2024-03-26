@@ -31,7 +31,7 @@ function projectCard({
         </div>
 
         <Skills skills={skillsArray} />
-        <Button text={buttonText} bg={"bg-stone-50"} projectName={title} />
+        <Button text={buttonText} bg={"bg-[#F5DD61]"} projectName={title} />
       </div>
       <div className=" w-[45%] flex justify-center items-center ">
         <img src={projectImg} className="w-full  md:w-[500px] " />

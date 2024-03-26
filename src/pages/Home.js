@@ -10,6 +10,7 @@ import { projects } from "../Data/data";
 import ProjectSection from "../components/Project/ProjectSection";
 import SocialLinks from "../components/common/contact/SocialLinks";
 import Skills from "./Skills";
+import CourseCertification from "../components/common/skills/CourseCertification";
 
 function Home() {
   return (
@@ -126,6 +127,10 @@ function Home() {
 
       {/* {project section} */}
       <ProjectSection projects={projects} />
+
+      <div className="text-white mb-10">
+      <CourseCertification/>
+      </div>
       <Footer />
     </div>
   );

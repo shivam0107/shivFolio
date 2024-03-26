@@ -17,8 +17,8 @@ function Button({ text, bg, projectName }) {
   return (
     <button
       onClick={hendleOnSubmit}
-      className={`${bg} text-xl mt-3 text-bluegray-100 py-3 
-      px-4 bolder border-2 border-blue-400 rounded-[90px]
+      className={`${bg} text-xl mt-3 text-black py-3 
+      px-4 bolder border-2 border-blue-400 rounded-md
       transition-all hover:scale-95 hover:bg-bluegray-800 hover:text-white`}
     >
       {text}

@@ -5,12 +5,12 @@ const OtherSection = ({data}) => {
   return (
     <div className="max-full mx-auto bg-white rounded-lg shadow-lg p-10 mb-4">
     <h2 className="text-2xl font-bold mb-4 text-black">{data.title}</h2>
-    <p className="text-gray-700 mb-4">Future Scope:</p>
+    {data.title === 'Future Scope' &&   <p className="text-gray-700 mb-4">Future Scope:</p>}
 
     <div className='flex flex-col gap-2'>
         {
             data.Scope.map((data , index) => {
-                return  <div className='p-2 '>⭐ {" "}{data}</div>
+                return  <div key={index} className='p-2 '>⭐ {" "}{data}</div>
             })
         }
     </div>
@@ -24,10 +24,10 @@ const OtherSection = ({data}) => {
     </div>
    
 
-   <div className='flex'>
+   <div className='flex gap-2'>
         {
             data.img.map((img , index) => (
-                <div className=''>
+                <div key={index} className=''>
                 <img src={img} alt={data.title} className="w-[300px] mb-4" />
                 </div>
             ))

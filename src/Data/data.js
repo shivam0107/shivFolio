@@ -1,5 +1,7 @@
-import projectImg from "../assets/apniPathShala.png";
+import projectImg from "../assets/apniPathShala/apniPathShala.png";
 import devImage from '../assets/DevDetective/home.png'
+import tictac from '../assets/Tic-tact-toe/tic-tac-toe.png'
+import weather from '../assets/Weather app/weather.png'
 
 export const list = {
   apniPathShala: [
@@ -60,6 +62,29 @@ export const projects = [
   },
   {
     position: "md:flex-row-reverse",
+    title: "WeatherApp",
+    date: "2 july 2023",
+    desc: `Developed a user-friendly weather web application that provides
+    real-time weatherinformation, including temperature, humidity, and
+    wind speed`,
+    pointsHeading: "what i learn during this project,",
+    skillsArray: [
+      "Html",
+      "css",
+      "javaScript",
+      "Openweathermaps API",
+      "GitHub",
+      "VsCode" 
+    ],
+    list: [
+      "Learn How to Make http request using fetch api",
+      "Parsing all the data fetched from  openWeathermap API",
+      "Some conditional rendering in UI",
+    ],
+    projectImg: `${weather}`,
+  },
+  {
+    position: "md:flex-row",
     title: "devDetective",
     date: "10 sep 2023",
     desc: "Provide social media handles Switch between light and dark modes Page is responsive - using media queries.",
@@ -75,6 +100,25 @@ export const projects = [
       "Use gitHub for hosting the project",
     ],
     projectImg: `${devImage}`,
+  },
+  {
+    position: "md:flex-row-reverse",
+    title: "TicTacToe",
+    date: "12 july 2023",
+    desc: `
+    Tic-tac-toe is a classic two-player strategy game played on a 3x3 grid. Players take turns marking spaces with their respective symbols, typically "X" and "O," aiming to form a horizontal, vertical, or diagonal line of their symbol. `,
+    pointsHeading: "what i learn during this project,",
+    skillsArray: [
+      "Html",
+      "css",
+      "javaScript",
+      "gitHub"
+    ],
+    list: [
+      "Learn HTMl css and  javascript",
+      "Use gitHub for hosting the project",
+    ],
+    projectImg: `${tictac}`,
   },
 ];
 
