@@ -9,6 +9,7 @@ import { technologies } from "../Data/data";
 import { projects } from "../Data/data";
 import ProjectSection from "../components/Project/ProjectSection";
 import SocialLinks from "../components/common/contact/SocialLinks";
+import Skills from "../components/common/Skills";
 
 function Home() {
   return (
@@ -125,6 +126,10 @@ function Home() {
 
       {/* {project section} */}
       <ProjectSection projects={projects} />
+
+      <div>
+        <Skills/>
+      </div>
       <Footer />
     </div>
   );

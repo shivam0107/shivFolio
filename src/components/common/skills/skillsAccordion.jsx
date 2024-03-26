@@ -10,23 +10,41 @@ import {
 import { FaAngleRight } from "react-icons/fa6";
 import { useState } from "react";
 
-const SkillsAccordion = ({ data }) => {
-  const [isActive, setIsActive] = useState(false);
+const SkillsAccordion = ({ data , index }) => {
+  const [isActive, setIsActive] = useState([0]);
+
 
 
 
   const contentEl = useRef();
 
+  const handleClick = () => {
+
+      if(isActive.includes(index)){
+        const newData = isActive.filter((item) => item !== index)
+        console.log("newdata" , newData);
+        setIsActive([newData]);
+        console.log("isActive" , isActive);
+      }
+      else{
+         console.log("index" , index);
+        const prev = isActive;
+        setIsActive([...prev , index]);
+      }
+       
+      
+  }
+
   const [sectionHeight, setSectionHeight] = useState(0);
   useEffect(() => {
-    setSectionHeight(isActive ? contentEl.current.scrollHeight : 0);
+    setSectionHeight(isActive.includes(index) ? contentEl.current.scrollHeight : 0);
   }, [isActive]);
 
   return (
     <div className="w-11/12 mx-auto flex flex-col justify-center items-center  text-white">
       <div className="">
         <div
-          onClick={() => setIsActive(!isActive)}
+          onClick={() => handleClick()}
           className="flex border-[1px] p-2 cursor-pointer border-white gap-5 justify-between"
         >
           <FaAnglesRight className="text-3xl  font-bold" />
@@ -34,14 +52,14 @@ const SkillsAccordion = ({ data }) => {
             <h1 className="text-3xl text-yellow-5 font-bold">{data.name}</h1>
             <p>{data.experience}</p>
           </div>
-          {isActive ? (
+          {isActive.includes(index) ? (
             <FaAngleUp className="text-3xl font-bold" />
           ) : (
             <FaAngleDown className="text-3xl font-bold" />
           )}
         </div>
 
-        {isActive && (
+        {isActive.includes(index) && (
           <div
             ref={contentEl}
             style={{
