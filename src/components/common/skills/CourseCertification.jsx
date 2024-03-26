@@ -68,12 +68,10 @@ const CourseCertification = () => {
               <span className="font-bold text-yellow-5 ">
                 Learning:{" "}
               </span>
-              working on problem statement SIH-1383, Presented by ministry of
-              himachal Pradesh, Focusing on developing an advanced System for
-              "Optimizing doctor availability and appointment allocation in
-              hospital through digital technology and AI Integration".We
-              presented our solution, our software aimed to check doctor
-              availability online and booking for consultation slots digitally.
+                Learn from basic HTML CSS and Javascript to react framework. build some projects in frontend like portfolio website, weather app , tic-tac-toe
+                Razorpay Landing Page.
+                In Backend i have learn nodejs , expressjs , mongodb etc;
+                Authentication and Authorization using json web token, Payment integration using Razorpay, cloud base media management, covered all these concept.
             </p>
           </div>
           <div>

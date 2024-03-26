@@ -6,13 +6,19 @@ import {
   FaAngleDown,
 } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { accordion } from "../Data/skillAccordion";
 import SkillsAccordion from "../components/common/skills/skillsAccordion";
 import Footer from "../components/Footer/Footer";
 import CourseCertification from "../components/common/skills/CourseCertification";
 
 const SkillSection = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <>
       <div className="w-11/12 mx-auto mb-16 text-white">
