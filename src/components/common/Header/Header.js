@@ -111,7 +111,7 @@ const Header = () => {
               to="/"
               className={(navClass) =>
                 navClass.isActive
-                  ? "text-bluegray-100 block py-2"
+                  ? "text-yellow-100 block py-2"
                   : " text-bluegray-100 hover:text-yellow-100 block py-2"
               }
             >
@@ -121,7 +121,7 @@ const Header = () => {
               to="/about"
               className={(navClass) =>
                 navClass.isActive
-                  ? "text-bluegray-100 block py-2"
+                  ? "text-yellow-100 block py-2"
                   : " text-bluegray-100 hover:text-yellow-100 block py-2"
               }
             >
@@ -131,17 +131,17 @@ const Header = () => {
               to="/projects"
               className={(navClass) =>
                 navClass.isActive
-                  ? "text-bluegray-100 block py-2"
+                  ? "text-yellow-100 block py-2"
                   : " text-bluegray-100 hover:text-yellow-100 block py-2"
               }
             >
               Projects
             </NavLink>
             <NavLink
-              to="/services"
+              to="/skills"
               className={(navClass) =>
                 navClass.isActive
-                  ? "text-bluegray-100 block py-2"
+                  ? "text-yellow-100 block py-2"
                   : " text-bluegray-100 hover:text-yellow-100 block py-2"
               }
             >
@@ -151,7 +151,7 @@ const Header = () => {
               to="/contact"
               className={(navClass) =>
                 navClass.isActive
-                  ? "text-bluegray-100 block py-2"
+                  ? "text-yellow-100 block py-2"
                   : " text-bluegray-100 hover:text-yellow-100 block py-2"
               }
             >
