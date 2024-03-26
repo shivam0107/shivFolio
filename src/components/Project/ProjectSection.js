@@ -17,6 +17,8 @@ const ProjectSection = ({ projects }) => {
               return (
                 
               <ProjectCard
+              key={index}
+                index={index+1}
                 position={project.position}
                 title={project.title}
                 date={project.date}

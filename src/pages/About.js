@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import Timeline from "../components/common/About/Timeline";
 import { educationTimelineElements, workTimelineElements } from "../Data/data";
@@ -14,6 +14,11 @@ function About() {
     setAcademics(false);
     navigate("/projects");
   };
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
