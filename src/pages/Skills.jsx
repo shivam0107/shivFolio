@@ -11,7 +11,7 @@ import { accordion } from "../Data/skillAccordion";
 import SkillsAccordion from "../components/common/skills/skillsAccordion";
 import Footer from "../components/Footer/Footer";
 
-const Skills = () => {
+const SkillSection = () => {
   return (
     <>
       <div className="w-11/12 mx-auto mb-16 text-white">
@@ -31,4 +31,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillSection;
