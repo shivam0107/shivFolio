@@ -14,6 +14,9 @@ export const list = {
   weatherApp: ["weather API", "HTML CSS"],
 };
 
+
+
+//tech stack 
 export const technologies = [
   "C++",
   "Java",
@@ -27,6 +30,9 @@ export const technologies = [
   "MongoDb",
 ];
 
+
+
+//projects
 export const projects = [
   {
     position: "md:flex-row",
@@ -122,6 +128,11 @@ export const projects = [
   },
 ];
 
+
+
+//education and timeline
+
+
 export const educationTimelineElements = [
   {
     id: 1,
@@ -157,6 +168,9 @@ export const educationTimelineElements = [
     link: "http://venkat1hsschoolsatna.in/",
   },
 ];
+
+
+//work timeline
 
 export const workTimelineElements = [
   {

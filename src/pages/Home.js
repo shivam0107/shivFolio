@@ -11,6 +11,7 @@ import ProjectSection from "../components/Project/ProjectSection";
 import SocialLinks from "../components/common/contact/SocialLinks";
 import Skills from "./Skills";
 import CourseCertification from "../components/common/skills/CourseCertification";
+import Slider from "../components/common/Slider";
 
 function Home() {
 
@@ -133,6 +134,12 @@ function Home() {
 
       <div className="text-white mb-10">
       <CourseCertification/>
+      </div>
+
+      <div className="w-11/12  mx-auto mb-5">
+          <h1 className="text-3xl place-items-center font-bold mb-5 underline text-white">Gallery</h1>
+
+        <Slider/>
       </div>
       <Footer />
     </div>
