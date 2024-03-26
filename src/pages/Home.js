@@ -72,7 +72,7 @@ function Home() {
         ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >
             <Link
-              to="https://bit.ly/49iY10R"
+              to="https://drive.google.com/file/d/1nN5MGkkROx2syro0ZPxA4ExXzVbvaLQ9/view?usp=sharing"
               className={(navClass) =>
                 navClass.isActive
                   ? "text-blue-400"
