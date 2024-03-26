@@ -19,7 +19,7 @@ const SocialLinks = () => {
     </NavLink>
 
     <NavLink
-      to="https://www.linkedin.com/in/shivamsingh13/"
+      to="https://leetcode.com/shivam0107/"
       className={(navClass) =>
         navClass.isActive ? "" : "text-white hover:text-blue-600"
       }
@@ -28,7 +28,7 @@ const SocialLinks = () => {
     </NavLink>
 
     <NavLink
-      to="https://www.linkedin.com/in/shivamsingh13/"
+      to="https://github.com/shivam0107"
       className={(navClass) =>
         navClass.isActive ? "" : "text-white hover:text-blue-600"
       }
@@ -37,7 +37,7 @@ const SocialLinks = () => {
     </NavLink>
 
     <NavLink
-      to="https://www.linkedin.com/in/shivamsingh13/"
+      to="https://twitter.com/shivams94021769"
       className={(navClass) =>
         navClass.isActive ? "" : "text-white hover:text-indigo-600"
       }

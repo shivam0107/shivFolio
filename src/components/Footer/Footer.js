@@ -24,7 +24,7 @@ function Footer() {
               <NavLink
                 to="/"
                 className={(navClass) =>
-                  navClass.isActive ? "" : " text-white hover:text-blue-600"
+                  navClass.isActive ? "text-yellow-100" : " text-white hover:text-blue-100"
                 }
               >
                 Home
@@ -33,7 +33,7 @@ function Footer() {
               <NavLink
                 to="/about"
                 className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
+                  navClass.isActive ? "text-yellow-100" : "text-white hover:text-blue-100"
                 }
               >
                 About
@@ -43,8 +43,8 @@ function Footer() {
                 to="/projects"
                 className={(navClass) =>
                   navClass.isActive
-                    ? "text-blue-600"
-                    : "text-white hover:text-blue-600"
+                    ? "text-yellow-100"
+                    : "text-white hover:text-blue-100"
                 }
               >
                 Projects
@@ -53,7 +53,7 @@ function Footer() {
               <NavLink
                 to="/skills"
                 className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
+                  navClass.isActive ? "text-yellow-100" : "text-white hover:text-blue-100"
                 }
               >
                 Skills
@@ -62,7 +62,7 @@ function Footer() {
               <NavLink
                 to="/contact"
                 className={(navClass) =>
-                  navClass.isActive ? "" : "text-white hover:text-blue-600"
+                  navClass.isActive ? "text-yellow-100" : "text-white hover:text-blue-100"
                 }
               >
                 Contact

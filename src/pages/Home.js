@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import shivam from "../assets/shiv-circle.png";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "../components/Footer/Footer";
@@ -13,6 +13,9 @@ import Skills from "./Skills";
 import CourseCertification from "../components/common/skills/CourseCertification";
 
 function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="overflow-x-hidden">
       {/* {hero section} */}
@@ -85,14 +88,14 @@ function Home() {
             </div>
 
           <div className="flex items-center">
-            <div className="bg-bluegray-700 py-2  px-2 text-white rounded-l-lg border-r-bluegray-100  border-2">
+            <div onClick={ () => navigate('/projects')} className="bg-bluegray-700 py-2 cursor-pointer px-2 text-white rounded-l-lg border-r-bluegray-100 ">
               <p className="text-center font-bold text-2xl">5</p>
               <p>Industry grade Projects</p>
             </div>
-            <div className="bg-bluegray-700 py-2 px-2 text-white rounded-r-lg ">
+            <Link to={"https://leetcode.com/shivam0107/"} target="_blank" className="bg-bluegray-700 py-2 px-2 text-white border-l-2 ">
               <p className="text-center font-bold text-2xl">300+</p>
               <p>DSA problem solved across Platform</p>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center">
