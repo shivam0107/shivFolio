@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -12,13 +12,19 @@ import SocialLinks from "../components/common/contact/SocialLinks";
 import Skills from "./Skills";
 import CourseCertification from "../components/common/skills/CourseCertification";
 import Slider from "../components/common/Slider";
+import ContactModal from "../components/common/contact/ContactModal";
 
 function Home() {
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+   
+  })
+
   return (
     <div className="overflow-x-hidden">
+           <ContactModal/>
       {/* {hero section} */}
 
       <div className="mx-auto w-11/12 max-w-6xl flex  items-center justify-between  flex-col md:flex-row">

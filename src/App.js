@@ -10,7 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import SkillSection from "./pages/Skills";
 function App() {
   return (
-    <div className="w-screen min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
+    <div className="w-screen relative min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
 
     <Header />
     
