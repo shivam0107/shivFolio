@@ -1,7 +1,7 @@
 export const accordion = [
     {
         name: "frontend development",
-        experience:"more then 1 year",
+        experience:"more than 1 year",
         skills:[
             {
                 name:"HTML",
@@ -31,7 +31,7 @@ export const accordion = [
     },
     {
         name: "backend development",
-        experience:"more then 1 year",
+        experience:"more than 1 year",
         skills:[
             {
                 name:"NodeJs",
@@ -57,7 +57,7 @@ export const accordion = [
     },
     {
         name: "Programming languages",
-        experience:"more then 1 year",
+        experience:"more than 1 year",
         skills:[
             {
                 name:"C++",
@@ -79,7 +79,7 @@ export const accordion = [
     },
     {
         name: "Other technologies",
-        experience:"more then 1 year",
+        experience:"more than 1 year",
         skills:[
             {
                 name:"GitHub",
