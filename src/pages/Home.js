@@ -19,12 +19,12 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-   
+    <ContactModal/>
   })
 
   return (
     <div className="overflow-x-hidden">
-           <ContactModal/>
+       
       {/* {hero section} */}
 
       <div className="mx-auto w-11/12 max-w-6xl flex  items-center justify-between  flex-col md:flex-row">
