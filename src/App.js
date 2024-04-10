@@ -8,10 +8,11 @@ import Project from "./pages/Project"
 import ProjectDetails from "./components/Project/ProjectDetails";
 import ContactUs from "./pages/ContactUs";
 import SkillSection from "./pages/Skills";
+import ContactModal from "./components/common/contact/ContactModal";
 function App() {
   return (
-    <div className="w-screen relative min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
-
+    <div className="w-screen overflow-x-hidden relative min-h-screen p-0 m-0 bg-bluegray-800 flex flex-col font-inter">
+    <ContactModal/>
     <Header />
     
     <Routes>

@@ -19,7 +19,10 @@ function ContactModal() {
       {showModal && (
         <div className="fixed inset-0 z-50 flex justify-center items-center text-white bg-black bg-opacity-50">
           <div className="absolute z-[1000] flex gap-5 justify-center items-center  cursor-pointer text-white left-0 top-[20%] p-2 border-r-2 bg-gray-800">
-           <h1 onClick={() => naigate('/contact')}  className='text-2xl font-bold'> Contact Us</h1>
+           <h1 onClick={() => {
+            naigate('/contact');
+            setShowModal(false);
+           }}  className='text-2xl font-bold'> Contact Us</h1>
           <IoClose onClick={() => setShowModal(!showModal)} size={30} className='font-bold '/>
 
           </div>

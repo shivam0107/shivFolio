@@ -19,8 +19,8 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    <ContactModal/>
-  })
+    
+  },[])
 
   return (
     <div className="overflow-x-hidden">
