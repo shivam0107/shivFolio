@@ -140,14 +140,14 @@ export const educationTimelineElements = [
     location: "Indore Madhya Pradesh",
     institute: "Indore Institute of Science and Technology",
     buttonText: "Visit",
-    date: "Expected: June 2024",
+    date: "July-2020 - June-2024",
     details: "CGPA: 8.49",
     icon: "school",
     link: "https://indoreinstitute.com/",
   },
   {
     id: 2,
-    title: "Higher secondary School",
+    title: "Higher secondary School - PCM",
     location: "Satna 485001 Madhya Pradesh",
     institute: "Govt. Excellence higher Secondary School Venkat No 1 satna MP",
     buttonText: "Visit",
@@ -171,30 +171,44 @@ export const educationTimelineElements = [
 
 
 //work timeline
-
-export const workTimelineElements = [
+export const workExperience = [
   {
     id: 1,
-    title: "Higher secondary School",
-    location: "Satna 485001 Madhya Pradesh",
-    institute: "Govt. Excellence higher Secondary School Venkat No 1 satna MP",
+    role: "System Engineer",
+    companyName: "Tata Consultancy Services",
+    location: "Indore, Madhya Pradesh, India",
+    institute: "Software Company",
     buttonText: "Visit",
-    date: "March 2020",
-    details: "Percentage: 89.20%",
-    icon: "school",
+    companyUrl: "https://www.tcs.com/",
+    date: "April 2025 – Present",
+    details: [
+      "Working on react"
+    ],
+    skills: ["React", "Node.js", "JavaScript", "SQL", "Python" , "Unix" , "IOS"],
+    icon: "work",
   },
   {
-    id: 2,
-    title: "Higher secondary School",
-    location: "Satna 485001 Madhya Pradesh",
-    institute: "Govt. Excellence higher Secondary School Venkat No 1 satna MP",
-    buttonText: "Visit",
-    date: "March 2020",
-    details: "Percentage: 89.20%",
-    icon: "school",
+   id: 2,
+  role: "React Native Developer",
+  companyName: "SOFMEN TECHNOLOGIES PVT LTD",
+  location: "Indore, India",
+  institute: "Software Company",
+  buttonText: "Visit",
+  companyUrl: "https://sofmen.com/", // replace with actual URL if available
+  date: "May 2024 – April 2025",
+  details: [
+    "Developed and maintained cross-platform mobile applications using React Native.",
+    "Integrated Stripe, Google Wallet, and Apple Wallet for secure payment solutions.",
+    "Implemented real-time location and routing features using Google Maps Directions API and Places API.",
+    "Used Context API for efficient state management and React Navigation for routing.",
+    "Deployed Android and iOS versions of the app on the Play Store and App Store."
+  ],
+  skills: ["React Native", "Stripe", "Google Wallet", "Apple Wallet", "Google Maps API", "Context API", "React Navigation" , 
+    "IOS" , "Typescript"
+  ],
+  icon: "work",
   },
-];
-
+]
 // position={"md:flex-row"}
 // title={"apniPathShala"}
 // date={"01 july 2003"}

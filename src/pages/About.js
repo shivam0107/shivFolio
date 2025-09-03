@@ -1,8 +1,9 @@
 import React, { useState , useEffect } from "react";
 import Footer from "../components/Footer/Footer";
-import Timeline from "../components/common/About/Timeline";
-import { educationTimelineElements, workTimelineElements } from "../Data/data";
+import AcademicTimeline from "../components/common/About/Timeline";
+import { educationTimelineElements, workExperience } from "../Data/data";
 import { useNavigate } from "react-router-dom";
+import WorkTimeline from "../components/common/About/WorkTimeline";
 
 function About() {
   const [isAcademics, setAcademics] = useState(true);
@@ -25,19 +26,25 @@ function About() {
       <section className=" mx-auto w-[80%]  py-16">
         <div className="container mx-auto ">
           <h2 className="text-4xl text-white font-bold mb-8">
-            Educational Background
+           {isAcademics ? "Educational Background" : "Work Experience"}
           </h2>
           <div className=" mb-2 flex justify-center gap-3 text-white">
-            <div className="p-2 bg-bluegray-600 rounded-md">
-              <button onClick={() => setAcademics(true)}>Academics</button>
+            <div className={`p-2 bg-bluegray-600 ${isAcademics ?  "bg-[#26667F]" : ""} rounded-md`}>
+              <button onClick={() => {
+                setAcademics(true)
+                setWork(false)
+              }}>Academics</button>
             </div>
-            <div className="p-2 bg-bluegray-600 rounded-md">
-              <button onClick={handelExperience}> Experience</button>
+            <div className={`p-2 bg-bluegray-600 ${isWork ?  "bg-[#26667F]" : ""} rounded-md`}>
+              <button onClick={() => {
+                setWork(true)
+                setAcademics(false)
+              }}> Experience</button>
             </div>
           </div>
           <div className="w-11/12 mx-auto ">
-            {isAcademics && <Timeline elements={educationTimelineElements} />}
-            {/* {isWork && <Timeline elements={workTimelineElements} />} */}
+            {isAcademics && <AcademicTimeline elements={educationTimelineElements} />}
+            {isWork && <WorkTimeline elements={workExperience} />}
           </div>
         </div>
       </section>

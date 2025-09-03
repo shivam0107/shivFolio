@@ -19,12 +19,12 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    
-  },[])
+
+  }, [])
 
   return (
     <div className="overflow-x-hidden">
-       
+
       {/* {hero section} */}
 
       <div className="mx-auto w-11/12 max-w-6xl flex  items-center justify-between  flex-col md:flex-row">
@@ -76,7 +76,7 @@ function Home() {
           </p>
           <button
             className=" text-white px-2 py-2  rounded-md transition 
-        ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+          ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >
             <Link
               to="https://drive.google.com/file/d/1nN5MGkkROx2syro0ZPxA4ExXzVbvaLQ9/view?usp=sharing"
@@ -90,16 +90,16 @@ function Home() {
               Download CV
             </Link>
           </button>
-            <div>
-              <SocialLinks/>
-            </div>
+          <div>
+            <SocialLinks />
+          </div>
 
           <div className="flex items-center">
-            <div onClick={ () => navigate('/projects')} className="bg-bluegray-700 py-2 cursor-pointer px-2 text-white rounded-l-lg border-r-bluegray-100 ">
+            <div onClick={() => navigate('/projects')} className="bg-bluegray-700 py-2 cursor-pointer px-2 text-white rounded-l-lg border-r-bluegray-100 ">
               <p className="text-center font-bold text-2xl">5</p>
               <p>Industry grade Projects</p>
             </div>
-            <Link to={"https://leetcode.com/shivam0107/"} target="_blank" className="bg-bluegray-700 py-2 px-2 text-white border-l-2 ">
+            <Link to={"https://leetcode.com/shivam0107/"} target="_blank" className="bg-bluegray-700 py-2 rounded-r-lg px-2 text-white border-l-2 ">
               <p className="text-center font-bold text-2xl">300+</p>
               <p>DSA problem solved across Platform</p>
             </Link>
@@ -139,13 +139,13 @@ function Home() {
       <ProjectSection projects={projects} />
 
       <div className="text-white mb-10">
-      <CourseCertification/>
+        <CourseCertification />
       </div>
 
       <div className="w-11/12  mx-auto mb-5">
-          <h1 className="text-3xl place-items-center font-bold mb-5 underline text-white">Gallery</h1>
+        <h1 className="text-3xl place-items-center font-bold mb-5 underline text-white">Gallery</h1>
 
-        <Slider/>
+        <Slider />
       </div>
       <Footer />
     </div>

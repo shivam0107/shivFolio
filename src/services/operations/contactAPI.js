@@ -5,6 +5,9 @@ import { contactusEndpoint } from "../apis";
 const {CONTACT_US_API} = contactusEndpoint;
 
 export async function getInTouch(data) {
+
+  console.log("data" , data);
+  
     const toastId = toast.loading("Loading...");
     try {
       const response = await apiConnector("POST", CONTACT_US_API, {

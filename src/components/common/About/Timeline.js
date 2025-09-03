@@ -8,7 +8,7 @@ import { FaUserGraduate } from "react-icons/fa6";
 import { MdWork } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const Timeline = ({ elements }) => {
+const AcademicTimeline = ({ elements }) => {
   return (
     <div className="text-white">
       <VerticalTimeline>
@@ -21,10 +21,12 @@ const Timeline = ({ elements }) => {
             icon={element.icon === "work" ? <MdWork /> : <FaUserGraduate />}
             contentStyle={{
               background: "#2C333F",
+              color: "#fff",
+              borderRadius: "12px",
             }}
           >
             <div className="text-bluegray-100 ">
-              <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-500 to-yellow-100">
+              <h1 className="text-xl font-bold  text-[#F2EDD1]">
                 {element.institute}
               </h1>
               <p>{element.title}</p>
@@ -48,4 +50,4 @@ const Timeline = ({ elements }) => {
   );
 };
 
-export default Timeline;
+export default AcademicTimeline;
